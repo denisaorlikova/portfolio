@@ -15,6 +15,7 @@ Technology and tools used:
 
 To do next:
 
-- add scroll animations
+- add scroll animations 🕺
 - add about section and project huddle content
-- add overlays to the gallery
+- add overlays to the gallery 🧞‍♂️
+- auto-prefixer 👹
