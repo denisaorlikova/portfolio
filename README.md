@@ -1,8 +1,6 @@
 # portfolio-2
 
-![portfolio page screenshot](./img/portfolio.png)
-
-2.0 version of my personal webpage - still in progressbar
+2.0 version of my personal webpage - still in progress
 
 Technology and tools used:
 
