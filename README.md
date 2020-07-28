@@ -7,6 +7,7 @@ Technology and tools used:
 - HTML
 - Sass
 - Bootstrap
+- npm
 - Git
 - Atom
 - Affinity Designer
