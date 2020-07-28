@@ -8,6 +8,13 @@ Technology and tools used:
 - Sass
 - Bootstrap
 - npm
+- AOS library
 - Git
 - Atom
 - Affinity Designer
+
+To do next:
+
+- add scroll animations
+- add about section and project huddle content
+- add overlays to the gallery
