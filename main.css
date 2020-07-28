@@ -9909,5 +9909,8 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.img-fluid {
+  height: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
