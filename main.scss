@@ -1,14 +1,26 @@
 //Customized Bootstrap variables
 
+$display4-weight:             300;
+
+$headings-font-weight:        300;
 
 //Include all of Bootstrap
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+// My variables
+
+$secondary-bg: #fff;
+
+$type-color: #212529;
+
+$orange: #F36A32;
+$blue: #3279F3;
+$yellow: #F3C632;
+
 //Custom css
 
 .nav-brand {
-  text-transform: uppercase;
   font-size: 24px;
 }
 
@@ -20,11 +32,46 @@ nav a {
 }
 
 nav a:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%231d1d1d' stroke-width='0.8' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23212529' stroke-width='0.8' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;
   background-repeat: repeat-x;
   text-decoration: none;
-  color: #212529;
+  color: $type-color;
   padding-bottom: 4px;
+}
+
+
+#contact a:first-of-type {
+  color: $blue;
+}
+
+#contact a:nth-of-type(2) {
+  color: $yellow;
+}
+
+#contact a:nth-of-type(3) {
+  color: $orange;
+}
+
+i:hover {
+  transform: scale(1.1);
+}
+
+.button {
+  background-color: $secondary-bg;
+  text-transform: uppercase;
+  border: 2px solid $type-color;
+  padding: 10px 30px;
+}
+
+.button:hover {
+  background-color: pink;
+  color: magenta;
+  border-color: magenta;
+  cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/sparkling-heart_1f496.png), auto;
+}
+
+#contact {
+  background-color: $secondary-bg;
 }
