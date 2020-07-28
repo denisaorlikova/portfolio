@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-2",
+  "version": "1.0.0",
+  "description": "2.0 version of my personal webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisaorlikova/portfolio-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denisaorlikova/portfolio-2/issues"
+  },
+  "homepage": "https://github.com/denisaorlikova/portfolio-2#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
