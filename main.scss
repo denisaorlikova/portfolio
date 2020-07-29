@@ -1,8 +1,10 @@
 //Customized Bootstrap variables
 
 $display4-weight:             300;
-
 $headings-font-weight:        300;
+
+$card-border-radius: 0;
+$card-border-width: 0px;
 
 //Include all of Bootstrap
 
@@ -14,11 +16,17 @@ $secondary-bg: #fff;
 
 $type-color: #212529;
 
-$orange: #F36A32;
-$blue: #3279F3;
-$yellow: #F3C632;
+$orange: hsl(17, 89%, 57%);
+$blue: hsl(218, 89%, 57%);
+$yellow: hsl(46, 89%, 57%);
 
-//Custom css
+$orange-transparent: hsla(17, 89%, 57%, 0.9);
+$blue-transparent: hsla(218, 89%, 57%, 0.9);
+$yellow-transparent: hsl(46, 89%, 57%, 0.9);
+
+//----------CUSTOM CSS-------------
+
+//Navbar
 
 .nav-brand {
   font-size: 24px;
@@ -31,7 +39,7 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:hover {
+.my-hover:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23212529' stroke-width='0.8' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;
@@ -41,6 +49,47 @@ nav a:hover {
   padding-bottom: 4px;
 }
 
+//Projects Gallery
+
+.my-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-overlay p {
+  margin: 0;
+}
+
+.my-overlay a {
+  display: none;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: $type-color;
+  padding: 20px 30px;
+  background-color: #fff;
+  margin: 0;
+}
+
+.my-overlay a:hover {
+  text-decoration: none;
+}
+
+.my-overlay-orange {
+  background-color: $orange-transparent;
+}
+.my-overlay-blue {
+  background-color: $blue-transparent;
+}
+.my-overlay-yellow {
+  background-color: $yellow-transparent;
+}
+
+
+//Social Icons
 
 #contact a:first-of-type {
   color: $blue;
@@ -57,6 +106,8 @@ nav a:hover {
 i:hover {
   transform: scale(1.1);
 }
+
+//Email Me Button
 
 .button {
   background-color: $secondary-bg;
