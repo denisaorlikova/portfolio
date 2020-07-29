@@ -8,6 +8,7 @@ Technology and tools used:
 - Sass
 - Bootstrap
 - npm
+- jQuery
 - AOS library
 - Git
 - Atom
@@ -17,5 +18,4 @@ To do next:
 
 - add scroll animations 🕺
 - add about section and project huddle content
-- add overlays to the gallery 🧞‍♂️
 - auto-prefixer 👹
