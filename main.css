@@ -9957,28 +9957,28 @@ nav a {
   text-decoration: none;
 }
 
-.my-overlay-orange {
-  background-color: rgba(243, 103, 48, 0.9);
+.my-overlay-purple {
+  background-color: rgba(204, 153, 255, 0.9);
 }
 
 .my-overlay-blue {
-  background-color: rgba(48, 119, 243, 0.9);
+  background-color: rgba(153, 204, 255, 0.9);
 }
 
-.my-overlay-yellow {
-  background-color: rgba(243, 197, 48, 0.9);
+.my-overlay-mint {
+  background-color: rgba(153, 255, 204, 0.9);
 }
 
 #contact a:first-of-type {
-  color: #3077f3;
+  color: #99ccff;
 }
 
 #contact a:nth-of-type(2) {
-  color: #f3c530;
+  color: #99ffcc;
 }
 
 #contact a:nth-of-type(3) {
-  color: #f36730;
+  color: #cc99ff;
 }
 
 i:hover {

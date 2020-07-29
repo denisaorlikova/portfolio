@@ -16,13 +16,13 @@ $secondary-bg: #fff;
 
 $type-color: #212529;
 
-$orange: hsl(17, 89%, 57%);
-$blue: hsl(218, 89%, 57%);
-$yellow: hsl(46, 89%, 57%);
+$purple: hsl(270, 100%, 80%);
+$blue: hsl(210, 100%, 80%);
+$mint: hsl(150, 100%, 80%);
 
-$orange-transparent: hsla(17, 89%, 57%, 0.9);
-$blue-transparent: hsla(218, 89%, 57%, 0.9);
-$yellow-transparent: hsl(46, 89%, 57%, 0.9);
+$purple-transparent: hsla(270, 100%, 80%, 0.9);
+$blue-transparent: hsla(210, 100%, 80%, 0.9);
+$mint-transparent: hsla(150, 100%, 80%, 0.9);
 
 //----------CUSTOM CSS-------------
 
@@ -78,14 +78,14 @@ nav a {
   text-decoration: none;
 }
 
-.my-overlay-orange {
-  background-color: $orange-transparent;
+.my-overlay-purple {
+  background-color: $purple-transparent;
 }
 .my-overlay-blue {
   background-color: $blue-transparent;
 }
-.my-overlay-yellow {
-  background-color: $yellow-transparent;
+.my-overlay-mint {
+  background-color: $mint-transparent;
 }
 
 
@@ -96,11 +96,11 @@ nav a {
 }
 
 #contact a:nth-of-type(2) {
-  color: $yellow;
+  color: $mint;
 }
 
 #contact a:nth-of-type(3) {
-  color: $orange;
+  color: $purple;
 }
 
 i:hover {
