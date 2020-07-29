@@ -30,6 +30,14 @@ $mint-transparent: hsla(150, 100%, 80%, 0.9);
 
 .nav-brand {
   font-size: 24px;
+  color: $type-color;
+  text-decoration: none;
+}
+
+.nav-brand:hover {
+  font-size: 24px;
+  color: $type-color;
+  text-decoration: none;
 }
 
 nav a {

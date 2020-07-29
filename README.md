@@ -16,6 +16,5 @@ Technology and tools used:
 
 To do next:
 
-- add scroll animations 🕺
 - add about section and project huddle content
 - auto-prefixer 👹
