@@ -12,31 +12,48 @@ $card-border-width: 0px;
 
 // My variables
 
+// this variable name is a bit confusing - rename to btn-secondary-bg
 $secondary-bg: #fff;
-
-$type-color: #212529;
 
 $purple: hsl(270, 100%, 80%);
 $blue: hsl(210, 100%, 80%);
 $mint: hsl(150, 100%, 80%);
+$soft-black: hsl(0,0,21%);
+$white: hsl(0,0,100%);
 
 $purple-transparent: hsla(270, 100%, 80%, 0.9);
 $blue-transparent: hsla(210, 100%, 80%, 0.9);
 $mint-transparent: hsla(150, 100%, 80%, 0.9);
 
+$body-bg:                   $soft-black;
+$body-color:                $white;
+$link-color:                $body-color;
+
+
 //----------CUSTOM CSS-------------
+
+// General styles
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
 
 //Navbar
 
 .nav-brand {
   font-size: 24px;
-  color: $type-color;
   text-decoration: none;
+  color: $link-color;
 }
 
 .nav-brand:hover {
   font-size: 24px;
-  color: $type-color;
   text-decoration: none;
 }
 
@@ -45,16 +62,17 @@ nav a {
   font-weight: 400;
   letter-spacing: 2.4px;
   text-transform: uppercase;
+  color: $link-color;
 }
 
 .my-hover:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23212529' stroke-width='0.8' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='0.8' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;
   background-repeat: repeat-x;
   text-decoration: none;
-  color: $type-color;
   padding-bottom: 4px;
+  color: $link-color;
 }
 
 //Projects Gallery
@@ -76,7 +94,6 @@ nav a {
   font-weight: 400;
   letter-spacing: 2.4px;
   text-transform: uppercase;
-  color: $type-color;
   padding: 20px 30px;
   background-color: #fff;
   margin: 0;
@@ -84,16 +101,6 @@ nav a {
 
 .my-overlay a:hover {
   text-decoration: none;
-}
-
-.my-overlay-purple {
-  background-color: $purple-transparent;
-}
-.my-overlay-blue {
-  background-color: $blue-transparent;
-}
-.my-overlay-mint {
-  background-color: $mint-transparent;
 }
 
 
@@ -111,6 +118,10 @@ nav a {
   color: $purple;
 }
 
+#contact a:nth-of-type(4) {
+  color: $mint;
+}
+
 i:hover {
   transform: scale(1.1);
 }
@@ -120,7 +131,7 @@ i:hover {
 .button {
   background-color: $secondary-bg;
   text-transform: uppercase;
-  border: 2px solid $type-color;
+  border: 2px solid $soft-black;
   padding: 10px 30px;
 }
 
@@ -129,8 +140,4 @@ i:hover {
   color: magenta;
   border-color: magenta;
   cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/sparkling-heart_1f496.png), auto;
-}
-
-#contact {
-  background-color: $secondary-bg;
 }

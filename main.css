@@ -9909,15 +9909,23 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #363636;
+  color: white;
+}
+
 .nav-brand {
   font-size: 24px;
-  color: #212529;
   text-decoration: none;
+  color: white;
 }
 
 .nav-brand:hover {
   font-size: 24px;
-  color: #212529;
   text-decoration: none;
 }
 
@@ -9926,16 +9934,17 @@ nav a {
   font-weight: 400;
   letter-spacing: 2.4px;
   text-transform: uppercase;
+  color: white;
 }
 
 .my-hover:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23212529' stroke-width='0.8' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='0.8' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;
   background-repeat: repeat-x;
   text-decoration: none;
-  color: #212529;
   padding-bottom: 4px;
+  color: white;
 }
 
 .my-overlay {
@@ -9955,7 +9964,6 @@ nav a {
   font-weight: 400;
   letter-spacing: 2.4px;
   text-transform: uppercase;
-  color: #212529;
   padding: 20px 30px;
   background-color: #fff;
   margin: 0;
@@ -9963,18 +9971,6 @@ nav a {
 
 .my-overlay a:hover {
   text-decoration: none;
-}
-
-.my-overlay-purple {
-  background-color: rgba(204, 153, 255, 0.9);
-}
-
-.my-overlay-blue {
-  background-color: rgba(153, 204, 255, 0.9);
-}
-
-.my-overlay-mint {
-  background-color: rgba(153, 255, 204, 0.9);
 }
 
 #contact a:first-of-type {
@@ -9989,6 +9985,10 @@ nav a {
   color: #cc99ff;
 }
 
+#contact a:nth-of-type(4) {
+  color: #99ffcc;
+}
+
 i:hover {
   transform: scale(1.1);
 }
@@ -9996,7 +9996,7 @@ i:hover {
 .button {
   background-color: #fff;
   text-transform: uppercase;
-  border: 2px solid #212529;
+  border: 2px solid #363636;
   padding: 10px 30px;
 }
 
@@ -10005,10 +10005,6 @@ i:hover {
   color: magenta;
   border-color: magenta;
   cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/sparkling-heart_1f496.png), auto;
-}
-
-#contact {
-  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
