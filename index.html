@@ -9,8 +9,11 @@
     <title>Denisa Orlíková | Front-end Coder Portfolio</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <script src="parallax-js/parallax.js"></script>
   </head>
   <body>
     <header>
@@ -25,31 +28,59 @@
       </div>
     </header>
     <section>
-      <div class="container">
-        <div class="row align-items-center justify-content-center intro">
-          <div class="col-md-10">
-            <h1 class="display-4 text-center text-md-left my-5" data-aos="fade-up" data-aos-duration="1450"  data-aos-delay="400">Hey! I'm Denisa<br/>- front-end coder based in Czech Republic.</h1>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-10 py-5">
+            <h1 class="display-4 text-md-left my-5 py-5" data-aos="fade-up" data-aos-duration="1450"  data-aos-delay="400">Front-end Developer </br>& Creative Coder</h1>
           </div>
         </div>
       </div>
     </section>
-    <section id="portfolio">
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1300"  data-aos-delay="400">
-              <div class="card">
-                <img src="img/huddle.jpg" class="card-img" alt="project Huddle screenshot">
+    <section class="d-flex flex-column justify-content-center" id="portfolio">
+            <div class="row justify-content-center py-2">
+              <!-- DEMO 4 Item-->
+              <div class="col-lg-5 mb-3 mb-lg-0">
+                <div data-aos="fade-right" data-aos-duration="1300"  class="hover hover-4 text-white rounded"><img src="img/05-min.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-4-content">
+                    <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#1</h3>
+                    <p class="hover-4-description text-uppercase mb-0 small">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
+              </div>
+              <!-- DEMO 4 Item            -->
+              <div class="col-lg-5">
+                <div data-aos="fade-left" data-aos-duration="1300"  data-aos-delay="50" class="hover hover-4 text-white rounded"><img src="img/20-min.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-4-content">
+                    <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#2</h3>
+                    <p class="hover-4-description text-uppercase mb-0 small">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
-              <div class="card">
-                <img src="img/easybank.jpg" class="card-img" alt="project Huddle screenshot"
+            <div class="row justify-content-center py-2">
+              <!-- DEMO 4 Item-->
+              <div class="col-lg-5 mb-3 mb-lg-0">
+                <div data-aos="fade-right" data-aos-duration="1300"  data-aos-delay="100" class="hover hover-4 text-white rounded"><img src="img/14-min.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-4-content">
+                    <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#3</h3>
+                    <p class="hover-4-description text-uppercase mb-0 small">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
               </div>
-            </div>
-         </div>
-        </div>
-      </div>
+              <!-- DEMO 4 Item            -->
+              <div class="col-lg-5">
+                <div data-aos="fade-left" data-aos-duration="1300"  data-aos-delay="150" class="hover hover-4 text-white rounded"><img src="img/19.jpg" alt="">
+                  <div class="hover-overlay"></div>
+                  <div class="hover-4-content">
+                    <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#4</h3>
+                    <p class="hover-4-description text-uppercase mb-0 small">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
     </section>
     <section id="about" class="py-5">
       <div class="container text-center">

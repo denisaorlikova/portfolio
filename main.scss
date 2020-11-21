@@ -2,6 +2,7 @@
 
 $display4-weight:             300;
 $headings-font-weight:        300;
+$headings-font-family: 'Antic Didone', serif;
 
 $card-border-radius: 0;
 $card-border-width: 0px;
@@ -18,14 +19,14 @@ $secondary-bg: #fff;
 $purple: hsl(270, 100%, 80%);
 $blue: hsl(210, 100%, 80%);
 $mint: hsl(150, 100%, 80%);
-$soft-black: hsl(0,0,21%);
+$soft-black: hsl(0,0,10%);
 $white: hsl(0,0,100%);
 
 $purple-transparent: hsla(270, 100%, 80%, 0.9);
 $blue-transparent: hsla(210, 100%, 80%, 0.9);
 $mint-transparent: hsla(150, 100%, 80%, 0.9);
 
-$body-bg:                   $soft-black;
+$body-bg:                   $white;
 $body-color:                $white;
 $link-color:                $body-color;
 
@@ -39,7 +40,10 @@ html {
 
 
 body {
-  background-color: $body-bg;
+  background-color: $soft-black;
+  background-image: url(img/bg-4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   color: $body-color;
 }
 
@@ -125,6 +129,97 @@ nav a {
 i:hover {
   transform: scale(1.1);
 }
+
+/* DEMO 4 ============================== */
+
+/* DEMO GENERAL ============================== */
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+.hover-4 img {
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-4 .hover-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 90;
+}
+
+.hover-4-title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3rem;
+  z-index: 99;
+}
+
+.hover-4-description {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  text-align: right;
+  border-right: 3px solid #fff;
+  padding: 0 1rem;
+  z-index: 99;
+  transform: translateX(-1.5rem);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+  .hover-4-description {
+    width: 50%;
+  }
+}
+
+.hover-4:hover img {
+  width: 100%;
+}
+
+.hover-4:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-4:hover .hover-4-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-4:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
 
 //Email Me Button
 
