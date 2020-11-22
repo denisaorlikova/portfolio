@@ -2,7 +2,7 @@
 
 $display4-weight:             300;
 $headings-font-weight:        300;
-$headings-font-family: 'Antic Didone', serif;
+//$headings-font-family: 'Antic Didone', serif;
 
 $card-border-radius: 0;
 $card-border-width: 0px;
@@ -27,7 +27,7 @@ $blue-transparent: hsla(210, 100%, 80%, 0.9);
 $mint-transparent: hsla(150, 100%, 80%, 0.9);
 
 $body-bg:                   $white;
-$body-color:                $white;
+$body-color:                $soft-black;
 $link-color:                $body-color;
 
 
@@ -41,7 +41,7 @@ html {
 
 body {
   background-color: $soft-black;
-  background-image: url(img/bg-4.jpg);
+  background-image: url(img/bg-5.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: $body-color;
@@ -59,6 +59,7 @@ body {
 .nav-brand:hover {
   font-size: 24px;
   text-decoration: none;
+  color: $soft-black;
 }
 
 nav a {
@@ -107,24 +108,11 @@ nav a {
   text-decoration: none;
 }
 
+//about
+
+
 
 //Social Icons
-
-#contact a:first-of-type {
-  color: $blue;
-}
-
-#contact a:nth-of-type(2) {
-  color: $mint;
-}
-
-#contact a:nth-of-type(3) {
-  color: $purple;
-}
-
-#contact a:nth-of-type(4) {
-  color: $mint;
-}
 
 i:hover {
   transform: scale(1.1);
@@ -224,15 +212,55 @@ i:hover {
 //Email Me Button
 
 .button {
-  background-color: $secondary-bg;
+  background: transparent;
   text-transform: uppercase;
-  border: 2px solid $soft-black;
+  border: 2px solid $white;
   padding: 10px 30px;
 }
 
 .button:hover {
-  background-color: pink;
-  color: magenta;
-  border-color: magenta;
   cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/sparkling-heart_1f496.png), auto;
+}
+
+//Cursor
+
+.abs-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 900;
+  top: -40px;
+  left: -40px;
+  pointer-events: none; 
+  //-webkit-mix-blend-mode: hard-light;
+  //mix-blend-mode: hard-light;
+}
+
+.cursor__small{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $soft-black;   
+  z-index: 5;   
+  margin: -20px 0 0 -20px;
+}
+
+.cursor__big{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px dashed $soft-black;
+  z-index: 5;   
+  opacity: 1;
+  margin: -40px 0 0 -40px;
+  transform: scale(0);
+  transition: all 480ms cubic-bezier(.26,.01,.17,2);
 }

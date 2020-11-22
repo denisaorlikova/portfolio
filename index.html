@@ -9,38 +9,51 @@
     <title>Denisa Orlíková | Front-end Coder Portfolio</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" integrity="sha512-pYd2QwnzV9JgtoARJf1Ui1q5+p1WHpeAz/M0sUJNprhDviO4zRo12GLlk4/sKBRUCtMHEmjgqo5zcrn8pkdhmQ==" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" integrity="sha512-SagM1PHxt5mWDyWARVY6UOdhM5A8J+R1UqIWcGfiwOd+be7uHQagB+JQOmfVZF8jjJQqbyuWzw/KXfb4yqjBkQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="main.css">
-    <script src="parallax-js/parallax.js"></script>
   </head>
   <body>
     <header>
       <div class="d-flex flex-column flex-md-row align-items-center py-5 px-xs-1 px-md-5 mb-3">
-        <a href="index.html" class="my-0 mr-md-auto nav-brand" data-aos="fade-up" data-aos-duration="1300">Denisa Orlikova</a>
+        <a href="index.html" class="my-0 mr-md-auto nav-brand curserhover" data-aos="fade-up" data-aos-duration="1300">Denisa Orlikova</a>
         <nav class="my-2 my-md-0 mr-md-3" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
-          <a class="p-2 my-hover" href="#portfolio">Portfolio</a>
-          <a class="p-2 my-hover" href="#about">About</a>
-          <a class="p-2 my-hover" href="#skills" id="skills-link">Skills</a>
-          <a class="p-2 my-hover" href="#contact">Contact</a>
+          <a class="p-2 my-hover curserhover" href="#portfolio" class="animsition-link"
+          data-animsition-out-class="fade-out-right"
+          data-animsition-out-duration="2000">Portfolio</a>
+          <a class="p-2 my-hover curserhover" href="#about">About</a>
+          <a class="p-2 my-hover curserhover" href="#skills" id="skills-link">Skills</a>
+          <a class="p-2 my-hover curserhover" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
+    <div class="custom-cursor" id="js-cursor">
+      <div class="cursor__small abs-center" id="js-cursor__small"></div>
+      <div class="cursor__big abs-center" id="js-cursor__big"> 
+      </div>
+   </div>
     <section>
       <div class="container py-5">
-        <div class="row">
-          <div class="col-md-10 py-5">
-            <h1 class="display-4 text-md-left my-5 py-5" data-aos="fade-up" data-aos-duration="1450"  data-aos-delay="400">Front-end Developer </br>& Creative Coder</h1>
+        <div class="row py-5 my-5">
+          <div class="col-md-6 py-5">
+            <h1 class="display-4 text-md-left" data-aos="fade-up" data-aos-duration="1450"  data-aos-delay="400">Front-end Developer </br>& Creative Coder</h1>
+            <p data-aos="fade-up" data-aos-duration="1450"  data-aos-delay="400">I create websites and digital art</p>
+          </div>
+          <div class="col-md-6 py-5 hover hover-4 text-white rounded" data-aos="fade-left" data-aos-mirror="true" data-aos-once="false" data-aos-duration="1000" >
+            <img src="img/05-min.jpg" alt="">
           </div>
         </div>
       </div>
     </section>
     <section class="d-flex flex-column justify-content-center" id="portfolio">
+      <h2 class="display-4 pb-3" data-aos="fade-up" data-aos-duration="1450">About me</h2>
+      <hr data-aos="fade-up" data-aos-duration="1450">
             <div class="row justify-content-center py-2">
               <!-- DEMO 4 Item-->
               <div class="col-lg-5 mb-3 mb-lg-0">
-                <div data-aos="fade-right" data-aos-duration="1300"  class="hover hover-4 text-white rounded"><img src="img/05-min.jpg" alt="">
+                <div data-aos="fade-right" data-aos-mirror="true" data-aos-once="false" data-aos-duration="1000" class="hover hover-4 text-white rounded"><img src="img/05-min.jpg" alt="">
                   <div class="hover-overlay"></div>
                   <div class="hover-4-content">
                     <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#1</h3>
@@ -50,7 +63,7 @@
               </div>
               <!-- DEMO 4 Item            -->
               <div class="col-lg-5">
-                <div data-aos="fade-left" data-aos-duration="1300"  data-aos-delay="50" class="hover hover-4 text-white rounded"><img src="img/20-min.jpg" alt="">
+                <div data-aos="fade-left" data-aos-mirror="true" data-aos-once="false" data-aos-duration="1000"  class="hover hover-4 text-white rounded"><img src="img/20-min.jpg" alt="">
                   <div class="hover-overlay"></div>
                   <div class="hover-4-content">
                     <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#2</h3>
@@ -62,7 +75,7 @@
             <div class="row justify-content-center py-2">
               <!-- DEMO 4 Item-->
               <div class="col-lg-5 mb-3 mb-lg-0">
-                <div data-aos="fade-right" data-aos-duration="1300"  data-aos-delay="100" class="hover hover-4 text-white rounded"><img src="img/14-min.jpg" alt="">
+                <div data-aos="fade-right" data-aos-mirror="true" data-aos-once="false" data-aos-duration="1000" class="hover hover-4 text-white rounded"><img src="img/14-min.jpg" alt="">
                   <div class="hover-overlay"></div>
                   <div class="hover-4-content">
                     <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#3</h3>
@@ -72,7 +85,7 @@
               </div>
               <!-- DEMO 4 Item            -->
               <div class="col-lg-5">
-                <div data-aos="fade-left" data-aos-duration="1300"  data-aos-delay="150" class="hover hover-4 text-white rounded"><img src="img/19.jpg" alt="">
+                <div data-aos="fade-left" data-aos-mirror="true" data-aos-once="false" data-aos-duration="1000" class="hover hover-4 text-white rounded"><img src="img/19.jpg" alt="">
                   <div class="hover-overlay"></div>
                   <div class="hover-4-content">
                     <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Project </span>#4</h3>
@@ -80,102 +93,85 @@
                   </div>
                 </div>
               </div>
-            </div> 
-    </section>
-    <section id="about" class="py-5">
-      <div class="container text-center">
-
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="display-4 pb-3" data-aos="fade-up" data-aos-duration="1450">About me</h2>
-            <p class="lead" data-aos="fade-up" data-aos-duration="1500">I am a front-end developer and designer. I specialize in converting designs into HTML/CSS code, creative coding and WordPress development. I evaluate websites for UserTesting and Userbrain as well. The most intriguing thing about coding and web in general for me is the never-ending opportunity to learn, experiment, and to create awesome experiences.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="py-5">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="display-4 pb-3" data-aos="fade-up" data-aos-duration="1450">My Skills</h2>
-            <div class="my-5 row">
-              <div class="col-md-6">
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">CSS</p>
-                  <div class="progress mb-3 mx-auto mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1450">HTML</p>
-                  <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1550">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1500">Bootstrap</p>
-                  <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1600">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1550">Sass</p>
-                  <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1600">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1550">Terminal/Bash</p>
-                  <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1600">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                    </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">jQuery</p>
-                <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1650">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-                <p class="text-muted" data-aos="fade-up" data-aos-duration="1450">JavaScript</p>
-                <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1650">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-                <p class="text-muted" data-aos="fade-up" data-aos-duration="1500">Git</p>
-                <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-                <p class="text-muted" data-aos="fade-up" data-aos-duration="1550">WordPress</p>
-                <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-                <p class="text-muted" data-aos="fade-up" data-aos-duration="1550">Illustrator</p>
-                <div class="progress mb-3 mx-auto w-75" style="height: 4px;" data-aos="fade-up" data-aos-duration="1700">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
             </div>
+            <a class="p-2 my-hover curserhover" href="#" class="animsition-link"
+          data-animsition-out-class="fade-out-right"
+          data-animsition-out-duration="2000">More</a> 
+    </section>
+    <section class="container-fluid py-5 my-5 text-left" id="contact">
+      <div class="container">
+        <hr data-aos="fade-up" data-aos-duration="1450">
+        <div class="row py-5">
+          <div class="col-md-4">
+            <h2 class="display-4 pb-3" data-aos="fade-up" data-aos-duration="1450">I specialize in</h2>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://www.linkedin.com/in/denisaorlikova" target="_blank">LinkedIn</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://github.com/denisaorlikova" target="_blank">GitHub</a>              </li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://twitter.com/deniorlik_codes" target="_blank">Twitter</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://instagram.com/deni_codes" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://www.linkedin.com/in/denisaorlikova" target="_blank">LinkedIn</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://github.com/denisaorlikova" target="_blank">GitHub</a>              </li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://twitter.com/deniorlik_codes" target="_blank">Twitter</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://instagram.com/deni_codes" target="_blank">Instagram</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="container-fluid py-5 my-5" id="contact">
-      <div class="container text-center">
-        <h2 class="display-4 pb-3" data-aos="fade-up" data-aos-duration="1450">Let's connect</h2>
-        <div class="text-center pt-2 pb-5" data-aos="fade-up" data-aos-duration="1500">
-          <a href="https://www.linkedin.com/in/denisaorlikova" target="_blank"><i class="fa fa-linkedin px-2" style="font-size:40px;"></i></a>
-          <a href="https://github.com/denisaorlikova" target="_blank"><i class="fa fa-github px-2" style="font-size:40px;"></i></a>
-          <a href="https://twitter.com/deniorlik_codes" target="_blank"><i class="fa fa-twitter px-2" style="font-size:40px;"></i></a>
-          <a href="https://instagram.com/deni_codes" target="_blank"><i class="fa fa-instagram px-2" style="font-size:40px;"></i></a>
+    <section class="container-fluid py-5 my-5 text-left" id="contact">
+      <div class="container">
+        <hr data-aos="fade-up" data-aos-duration="1450">
+        <div class="row py-5">
+          <div class="col-md-4">
+            <h2 class="display-4 pb-3" data-aos="fade-up" data-aos-duration="1450">Let's get in touch</h2>
+          </div>
+          <div class="col-md-4">
+            <h2 class="pb-3" data-aos="fade-up" data-aos-duration="1450">Connect on socials</h2>
+            <ul>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://www.linkedin.com/in/denisaorlikova" target="_blank">LinkedIn</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://github.com/denisaorlikova" target="_blank">GitHub</a>              </li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://twitter.com/deniorlik_codes" target="_blank">Twitter</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://instagram.com/deni_codes" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2 class="pb-3" data-aos="fade-up" data-aos-duration="1450">Contact me directly</h2>
+            <ul>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://www.linkedin.com/in/denisaorlikova" target="_blank">LinkedIn</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"> <a class="curserhover" href="https://github.com/denisaorlikova" target="_blank">GitHub</a>              </li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://twitter.com/deniorlik_codes" target="_blank">Twitter</a></li>
+              <li class="lead display-5 text-md-left" data-aos="fade-up" data-aos-duration="1500"><a class="curserhover" href="https://instagram.com/deni_codes" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
         </div>
-        <input type="submit" class='button' value="Email Me" onclick="window.location.href='mailto:denisa.orlik@pm.me'" data-aos="fade-up" data-aos-duration="1600">
       </div>
     </section>
-    <footer class="container text-center">
-      <p>&#169; 2020 Denisa Orlíková</p>
+    <footer class="container-fluid py-5 my-5" id="contact">
+      <div class="container">
+        <hr data-aos="fade-up" data-aos-duration="1450">
+        <div class="row py-5">
+          <div class="col-md-4 text-left">
+            <p>&#169; 2020 Denisa Orlíková</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p>&#169; 2020 Denisa Orlíková</p>
+          </div>
+          <div class="col-md-4 text-right">
+            <p>&#169; 2020 Denisa Orlíková</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="app.js"></script>
   </body>
 </html>
