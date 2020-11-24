@@ -10,8 +10,6 @@ if(usrAg.indexOf("Chrome") > -1 || usrAg.indexOf("Safari") > -1) {
     browserPrefix = "-ms-";
 }
 
-//TweenLite.defaultEase = Power3.easeInOut;
-
 var $cursor = jQuery('#js-cursor');
 var $cursor__big = jQuery('#js-cursor__big');
 var $cursor__small = jQuery('#js-cursor__small');

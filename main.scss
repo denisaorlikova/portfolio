@@ -1,3 +1,15 @@
+$secondary-bg: #fff;
+
+$purple: hsl(270, 100%, 80%);
+$blue: hsl(210, 100%, 80%);
+$mint: hsl(150, 100%, 80%);
+$soft-black: hsl(0,0,10%);
+$white: hsl(0,0,100%);
+
+$purple-transparent: hsla(270, 100%, 80%, 0.9);
+$blue-transparent: hsla(210, 100%, 80%, 0.9);
+$mint-transparent: hsla(150, 100%, 80%, 0.9);
+
 //Customized Bootstrap variables
 
 $display4-weight:             300;
@@ -6,6 +18,11 @@ $headings-font-weight:        300;
 
 $card-border-radius: 0;
 $card-border-width: 0px;
+
+$body-bg:                   $white;
+$body-color:                $soft-black;
+$link-color:                $body-color;
+$link-hover-decoration:     none;
 
 //Include all of Bootstrap
 
@@ -28,12 +45,13 @@ $mint-transparent: hsla(150, 100%, 80%, 0.9);
 
 $body-bg:                   $white;
 $body-color:                $soft-black;
-$link-color:                $body-color;
+$link-color:                $body-color!important;
 
 
 //----------CUSTOM CSS-------------
 
 // General styles
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,6 +63,19 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: $body-color;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: $body-color;
+
+  li {
+    padding: 1rem 0;
+    font-size: 28px;
+    font-weight: 300;
+    border-bottom: none;
+  }
 }
 
 
@@ -60,6 +91,7 @@ body {
   font-size: 24px;
   text-decoration: none;
   color: $soft-black;
+  cursor: ne-resize;
 }
 
 nav a {
@@ -106,6 +138,7 @@ nav a {
 
 .my-overlay a:hover {
   text-decoration: none;
+  cursor: ne-resize;
 }
 
 //about
@@ -237,20 +270,17 @@ i:hover {
   border-radius: 50%;
   position: absolute;
   z-index: 900;
-  top: -40px;
-  left: -40px;
+  top: -20px;
+  left: -20px;
   pointer-events: none; 
-  //-webkit-mix-blend-mode: hard-light;
-  //mix-blend-mode: hard-light;
 }
 
-.cursor__small{
+.cursor__small {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: $soft-black;   
+  border: 1px dashed $soft-black;  
   z-index: 5;   
-  margin: -20px 0 0 -20px;
 }
 
 .cursor__big{
@@ -258,9 +288,12 @@ i:hover {
   height: 120px;
   border-radius: 50%;
   border: 1px dashed $soft-black;
-  z-index: 5;   
+  position: absolute;
+  z-index: 900;
+  top: -60px;
+  left: -60px;   
   opacity: 1;
-  margin: -40px 0 0 -40px;
   transform: scale(0);
   transition: all 480ms cubic-bezier(.26,.01,.17,2);
 }
+
