@@ -16,11 +16,13 @@ $display4-weight:             300;
 $headings-font-weight:        300;
 //$headings-font-family: 'Antic Didone', serif;
 
+$display1-size:               8rem;
+
 $card-border-radius: 0;
 $card-border-width: 0px;
 
-$body-bg:                   $white;
-$body-color:                $soft-black;
+$body-bg:                   $soft-black;
+$body-color:                $white;
 $link-color:                $body-color;
 $link-hover-decoration:     none;
 
@@ -43,8 +45,8 @@ $purple-transparent: hsla(270, 100%, 80%, 0.9);
 $blue-transparent: hsla(210, 100%, 80%, 0.9);
 $mint-transparent: hsla(150, 100%, 80%, 0.9);
 
-$body-bg:                   $white;
-$body-color:                $soft-black;
+$body-bg:                   $soft-black;
+$body-color:                $white;
 $link-color:                $body-color!important;
 
 
@@ -58,8 +60,7 @@ html {
 
 
 body {
-  background-color: $soft-black;
-  background-image: url(img/bg-5.jpg);
+  background-color: $body-bg;
   background-size: cover;
   background-attachment: fixed;
   color: $body-color;
@@ -68,14 +69,24 @@ body {
 ul {
   list-style-type: none;
   padding: 0;
-  color: $body-color;
 
   li {
-    padding: 1rem 0;
-    font-size: 28px;
-    font-weight: 300;
-    border-bottom: none;
+    color: $body-color;
+    padding: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 4px;
   }
+}
+
+.list--projects {
+
+  li {
+    margin-bottom: 0.725rem;
+  }
+}
+
+hr {
+  border-top: 0.2px solid $white;
 }
 
 
@@ -279,7 +290,7 @@ i:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px dashed $soft-black;  
+  border: 1px dashed $white;  
   z-index: 5;   
 }
 
@@ -287,7 +298,7 @@ i:hover {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 1px dashed $soft-black;
+  border: 1px dashed $white;
   position: absolute;
   z-index: 900;
   top: -60px;
